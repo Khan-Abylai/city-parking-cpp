@@ -1,0 +1,8 @@
+{
+  "camera_ips": "10.66.69.21,10.66.69.22",
+  "result_send_ip": "http://10.66.100.180:8080/camera/kr/event",
+  "node_ip": "http://10.66.5.25:8888/rest/camera/getCalibrationByIp/",
+  "use_gpu_decode": 1,
+  "plates_count": 10,
+  "time_between_sent_plates": 10
+}

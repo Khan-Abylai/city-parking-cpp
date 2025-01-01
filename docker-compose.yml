@@ -1,0 +1,16 @@
+services:
+  anpr_app:
+    container_name: anpr_app
+    command: ./city_parking
+    environment:
+      - NVIDIA_DRIVER_CAPABILITIES=all
+    image: registry.infra.smartparking.kz/parking_cpp:v4.0.1
+    restart: always
+    volumes:
+      - ./config.json:/app/config.json
+    logging:
+      options:
+        max-size: 50m
+    networks:
+      - parking-net
+version: '2.1'
